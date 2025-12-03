@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Agregar el directorio actual al path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from database.database import Database
 from gui.main_window import LoginWindow
 

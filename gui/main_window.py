@@ -4,6 +4,7 @@ from datetime import datetime
 from models.producto import Producto
 from models.movimiento import Movimiento
 
+
 class LoginWindow:
     def __init__(self, db):
         self.db = db
