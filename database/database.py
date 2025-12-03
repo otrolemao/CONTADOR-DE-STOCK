@@ -7,11 +7,11 @@ class Database:
     
     def connect(self):
         try:
+            # CAMBIA ESTOS VALORES SEGUN LO QUE MUESTRE verificar_oracle.py
             self.connection = oracledb.connect(
-                user="SYS",          # ← "SYS" en lugar de "SYSTEM"
-                password="inacap",   # ← Tu contraseña
-                dsn="localhost:1521/XE",
-                mode=oracledb.SYSDBA  # ← ¡IMPORTANTE! Agregar este modo
+                user="GESTIONDENTAL",          # Cambia esto
+                password="inacap",      # Cambia esto si es necesario
+                dsn="localhost:1521/XE"
             )
             print("Conexion establecida con Oracle")
         except oracledb.Error as error:
